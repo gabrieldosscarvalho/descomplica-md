@@ -1,0 +1,16 @@
+{
+    "name": "gabrieldosscarvalho/descomplica-md-bundle",
+    "description": "DescomplicaMD - Plataforma de marketing digital para o micro e pequeno empreendedor",
+    "type": "mautic-plugin",
+    "require": {
+        "php": ">=7.3",
+        "symfony/framework-bundle": "^5.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel Carvalho",
+            "email": "gabriel.dossantoscarvalho@hotmail.com"
+        }
+    ]
+}
