@@ -94,13 +94,13 @@ class ChatGptHelper
     {
         switch ($endpoint) {
             case 'analyze':
-                return "Analise os seguintes dados da campanha e forneça insights:\n" . json_encode($data);
+                return "Exiba as informações de entrada fornecidas e Analise os seguintes dados da campanha e forneça insights:\n" . json_encode($data);
             case 'predict':
-                return "Preveja o desempenho futuro dos seguintes dados da campanha:\n" . json_encode($data);
+                return "Exiba as informações de entrada fornecidas e Preveja o desempenho futuro dos seguintes dados da campanha:\n" . json_encode($data);
             case 'optimize':
-                return "Forneça sugestões de otimização para os seguintes dados da campanha:\n" . json_encode($data);
+                return "Exiba as informações de entrada fornecidas e Forneça sugestões de otimização para os seguintes dados da campanha:\n" . json_encode($data);
             case 'suggest':
-                return "Forneça sugestões para os seguintes dados da campanha:\n" . json_encode($data);
+                return "Exiba as informações de entrada fornecidas e Forneça sugestões para os seguintes dados da campanha:\n" . json_encode($data);
             case 'chat':
                 return "Campanha: " . json_encode($data['campaign']) . "\nMensagem: " . $data['message'];
             default:

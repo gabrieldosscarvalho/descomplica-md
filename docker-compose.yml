@@ -42,6 +42,9 @@ services:
       - 8001:80
     volumes:
       - ./mautic_data:/var/www/html
+      - type: bind
+        source: ./DescomplicaMDBundle
+        target: /var/www/html/plugins/DescomplicaMDBundle
     environment:
       - DOCKER_MAUTIC_LOAD_TEST_DATA=${DOCKER_MAUTIC_LOAD_TEST_DATA}
       - DOCKER_MAUTIC_RUN_MIGRATIONS=${DOCKER_MAUTIC_RUN_MIGRATIONS}
